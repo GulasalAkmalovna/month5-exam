@@ -49,42 +49,13 @@ const Index = () => {
                         </div>
                     </div>
 
-                    {/* Hamburger Menu for Mobile */}
                     <div className="lg:hidden">
                         <img src={menuIcon} alt="Menu Icon" onClick={() => setIsMenuOpen(!isMenuOpen)} />
                     </div>
                 </nav>
 
-                {/* Mobile Menu */}
-                {isMenuOpen && (
-                    <div className="lg:hidden absolute bg-[#000000E5] w-full h-screen top-0 left-0 flex flex-col items-center justify-center">
-                        <ul className='flex flex-col gap-6 text-center'>
-                            <li onClick={() => setIsMenuOpen(false)}>
-                                <NavLink className="nav-link" to='/'>Model S</NavLink>
-                            </li>
-                            <li onClick={() => setIsMenuOpen(false)}>
-                                <NavLink className="nav-link" to='/model-3'>Model 3</NavLink>
-                            </li>
-                            <li onClick={() => setIsMenuOpen(false)}>
-                                <NavLink className="nav-link" to='/model-x'>Model X</NavLink>
-                            </li>
-                            <li onClick={() => setIsMenuOpen(false)}>
-                                <NavLink className="nav-link" to='/model-y'>Model Y</NavLink>
-                            </li>
-                            <li onClick={() => setIsMenuOpen(false)}>
-                                <NavLink className="nav-link" to='/solar-roof'>Solar Roof</NavLink>
-                            </li>
-                            <li onClick={() => setIsMenuOpen(false)}>
-                                <NavLink className="nav-link" to='/solar-panels'>Solar Panels</NavLink>
-                            </li>
-                        </ul>
 
-                        <div className='mt-10'>
-                            <input className='bg-[#F4FBFF1A] p-[8px] px-[14px] pr-10 rounded-[20px] outline-none placeholder:text-[#e8e6e6]' type="text" placeholder='Search' />
-                            <img className='absolute right-[16px]' src={poisk} alt="Search" />
-                        </div>
-                    </div>
-                )}
+
             </div>
         </header>
     );
