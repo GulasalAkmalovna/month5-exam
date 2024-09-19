@@ -3,10 +3,10 @@ import logo from '../../images/logo.svg';
 import { NavLink } from 'react-router-dom';
 import person from '../../images/person.svg';
 import poisk from '../../images/poisk.svg';
-import menuIcon from '../../images/menu.svg';  // You can add a hamburger icon for mobile
+import menuIcon from '../../images/menu.svg';
 
 const Index = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
 
     return (
         <header className='w-full bg-[rgba(0,0,0,0.13)] text-white  flex items-center fixed z-10 top-0 left-0 backdrop-blur-[30px]'>
